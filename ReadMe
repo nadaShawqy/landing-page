@@ -1,0 +1,30 @@
+# udacity landing page 
+
+this project is about landing page consisting of 4 sections
+
+[1] => on the navigation item , the item scroll you to the appropriate section.
+    => i do it by html using href and id.
+
+[2] => functionality added when index.html is loaded in the browser.
+    => i do it using DOMContentLoaded event in the start of js file.
+
+[3] => there are three files (index.html file , styles.css file and app.js file).
+
+[4] => the web page is responsive in all devices without using any libraries.
+
+[5] => navigation is build dynamically as unordered list that is empty and i complete it by javascript.
+    => i did it by using function addLi() and for loop by createElement and appendChild as i create li and 
+    a element and then put them all in ul, i also create an id , href and class attribute for all of them.
+
+[6] => i added a active class to navigation items when a section is in the viewport using getBoundingClientRect    
+    property , if the top is equal 0 it means that the section in the viewport and i added active class and so on.
+
+[7] => i made the fixed navigation bar hide while not scrolling by using pageYoffset and scrollTop to determine 
+    the current scroll to know if the user scroll the page or not .. if there is a scroll it means that the current distance to top is more than the previous distance to top so i transfer the navbar untill it fadeOut.
+
+[8] => add scroll to top button that only visible when i scroll down using scrollTop that made its value equal 0
+    it means that i am in the top of the page.
+
+[9] => i also changed the color of the navbar when i scrolled down to sections to fit the color of the background.
+
+note: if there is something wrong please tell me how to modify it on feedback.

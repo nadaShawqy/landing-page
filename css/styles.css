@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+    box-sizing: border-box;
+}
+.active{
+    border-bottom: 5px solid #4db4ad;
+}
+.scroll{
+    background-color: #fff;
+}
+.show{
+    display: block;
+}
+/* header */
+header nav{
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    height: 70px;
+    line-height: 70px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: #54817e;
+}
+header nav ul li{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    border-bottom: 5px solid #066d68;
+}
+header nav ul li:last-child{
+    margin-right: 50px;
+}
+header .heading{
+    height: 660px;
+    background: linear-gradient(110deg, #215551, #8EE3DC);
+    top: 100px;
+}
+header .heading h1{
+    padding-top: 200px;
+    font-size: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+header .heading p{
+    line-height: 1.5;
+    padding-left: 50px;
+    font-size: 17px;
+}
+header button{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #215551;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: fixed;
+    right: 0;
+    top: 80%;
+    right: 5px;
+    display: none;
+}
+/* sections */
+section{
+    margin: 0 30px;
+    margin-top: 30px;
+    line-height: 2;
+    padding-top: 80px;
+    display: block;
+}
+section h2{
+    font-size: 33px;
+}
+section p{
+    margin-bottom: 15px;
+}
+section hr{
+    margin: 25px 0;
+    background-color: #215551;
+    border: 1px solid #215551;
+}
+/* footer */
+footer{
+    background: linear-gradient(120deg, #215551, #8EE3DC);
+    height: 70px;
+    line-height: 70px;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+}
+/* responsive */
+@media screen and (max-width: 570px){
+    header nav ul a{
+        margin-left: -20px;
+        font-size: 20px;
+    }
+    header nav ul li{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 460px){
+    header nav ul li{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    header nav ul li:last-child{
+        margin-right: 45px;
+    }
+    header nav ul a{
+        margin-left: -35px;
+    }
+}
